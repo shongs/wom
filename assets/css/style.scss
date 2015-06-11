@@ -1,0 +1,107 @@
+/*------------------------------------------------------------------------------ Normalizador */
+@import 'normalize';
+/*------------------------------------------------------------------------------ Mixins */
+@import 'mixins';
+/*------------------------------------------------------------------------------ Tipografía */
+@import 'fonts';
+/*------------------------------------------------------------------------------ Variables */
+
+/*------------------------------------------------------------------------------ Generales */
+
+body{
+	line-height: 1.2;
+}
+.clearfix{*zoom:1;clear: both;}
+.clearfix:before, .clearfix:after{content:" ";display:table}
+.clearfix:after{clear:both}
+
+
+// COLORES
+$wom-color:#3A1F4F;
+$wom-light:#852D9A;
+$dk-grey:#242424;
+
+
+/*------------------------------------------------------------------------------Grid */
+
+.row{
+	width:100%; max-width:1000px; margin-left:auto; margin-right:auto;
+
+}
+@include ninja-grid(12, 30, 1000, 'col');
+
+@include ninja-grid(10, 30, 1000, 'col-m');
+
+.last{margin-right: !important;}
+
+// --------------------------------------------------------------------FIN GRID
+
+// MARGENES
+
+// MARGENES GENERALES
+.marg-10{ margin: 10px;}
+.marg-20{ margin: 20px;}
+.marg-30{ margin: 30px;}
+.marg-40{ margin: 40px;}
+.marg-50{ margin: 50px;}
+.marg-60{ margin: 60px;}
+.marg-70{ margin: 70px;}
+.marg-80{ margin: 80px;}
+.marg-90{ margin: 90px;}
+.marg-100{ margin: 100px;}
+
+// MARGENES ALTURA
+.mar-10-20{ margin: 10px 20px;}
+.mar-20-40{ margin: 20px 40px;}
+
+// PADDINGS
+.pad-10{padding: 10px;}
+.pad-20{padding: 20px;}
+.pad-30{padding: 30px;}
+.pad-40{padding: 40px;}
+.pad-50{padding: 50px;}
+
+// PADDINGS ancho
+
+.pad-20-30{padding: 20px 30px;}
+.pad-20-40{padding: 20px 40px;}
+.pad-20-60{padding: 20px 60px;}
+
+// PADDINGS ALTO
+.pad-0-20{padding: 20px 0;}
+.pad-30-20{padding: 30px 20px;}
+.pad-40-20{padding: 40px 20px;}
+.pad-60-20{padding: 60px 20px;}
+
+
+.ohidden{overflow: hidden;}
+// TITULOS
+
+h1, h2, h3, h4{
+	font-family: 'bitter';
+
+}
+
+strong{font-weight: bold;}
+em{font-style: italic;}
+
+
+/*------------------------------------------------------------------------------ header */
+@import 'header';
+
+// ----------------------------------------------------------------------------- SLIDER
+
+@import 'slider';
+
+
+//-----------------------------------------------------------------------------  Estructura Equipos
+
+@import 'estructuras-equipos';
+
+
+//----------------------------------------------------------------------------- Landings
+@import 'landing';
+
+// ----------------------------------------------------------------------------- Footer
+
+@import 'footer';

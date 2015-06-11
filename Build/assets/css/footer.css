@@ -1,0 +1,19 @@
+.main-foot {
+  background: #242424;
+  color: #fff;
+  position: relative;
+  padding-top: 50px; }
+  .main-foot .triangle-foot {
+    width: 0;
+    height: 0;
+    border-left-style: solid;
+    border-left-color: transparent;
+    border-right-style: solid;
+    border-right-color: transparent;
+    border-top: 50px inset #fff;
+    top: 0;
+    position: absolute;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+    border-style: solid dotted none; }

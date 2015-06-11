@@ -1,0 +1,28 @@
+$wom-color:#3A1F4F;
+$wom-light:#852D9A;
+$dk-grey:#242424;
+
+.main-foot{
+	background: $dk-grey;
+	color: #fff;
+	position: relative;
+	padding-top: 50px;
+
+	.triangle-foot{
+		width: 0;
+		height: 0;
+		border-left-style:solid;
+		border-left-color: transparent;
+		border-right-style:solid;
+		border-right-color: transparent;
+		border-top: 50px inset #fff;
+		top: 0;
+		position: absolute;
+		-webkit-transform:rotate(360deg);
+		-moz-transform:rotate(360deg);
+		transform:rotate(360deg);
+		border-style: solid dotted none;
+
+	
+	}
+}
